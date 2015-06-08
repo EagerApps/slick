@@ -27,7 +27,7 @@
         "depends": {
           "./slick/slick.js": "jQuery"
         }
-      },
+      }
     ],
     "body": [
       {

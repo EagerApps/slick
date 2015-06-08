@@ -17,7 +17,7 @@
           "github.com/jquery/jquery:jquery.js": "jQuery"
         },
         "exports": [
-          "Slick"
+          "global:Slick"
         ]
       },
       {

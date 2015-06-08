@@ -1,0 +1,83 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "style",
+        "src": "./slick/slick.css"
+      },
+      {
+        "type": "style",
+        "src": "./slick/slick-theme.css"
+      },
+      {
+        "type": "script",
+        "src": "./slick/slick.js",
+        "moduleType": "global",
+        "depends": {
+          "github.com/jquery/jquery:jquery.js": "jQuery"
+        },
+        "exports": [
+          "Slick"
+        ]
+      },
+      {
+        "type": "script",
+        "moduleType": "global",
+        "src": "./install/helper.js",
+        "depends": {
+          "./slick/slick.js": "Slick"
+        }
+      }
+    ]
+  },
+  "dependencies": {
+    "github.com/jquery/jquery": ">= 1.7.0, <= 1.10.2"
+  },
+  "options": {
+    "properties": {
+      "location": {
+        "title": "Location",
+        "description": "Where on the page should your slider appear?",
+        "type": "object",
+        "format": "element",
+        "order": 0
+      },
+      "title": {
+        "title": "Title",
+        "description": "A title to appear above this slider.  Leave blank for no title.",
+        "type": "string",
+        "order": 1
+      },
+      "items": {
+        "title": "Steps",
+        "type": "array",
+        "order": 2,
+        "items": {
+          "title": "Step",
+          "type": "object",
+          "properties": {
+            "title": {
+              "title": "Heading",
+              "description": "A heading to appear at the top of this step.  Leave blank for no heading.",
+              "type": "string",
+              "order": 1
+            },
+            "content": {
+              "title": "Content",
+              "description": "The content to appear in this step.  Supports HTML.",
+              "type": "string",
+              "format": "textarea",
+              "order": 2
+            }
+          }
+        }
+      },
+      "autoplay": {
+        "title": "Autoplay",
+        "description": "Should the slider start playing automatically?",
+        "type": "boolean",
+        "order": 3
+      }
+    }
+  }
+}

@@ -27,6 +27,10 @@
         "depends": {
           "./slick/slick.js": "Slick"
         }
+      },
+      {
+        "type": "script",
+        "contents": "EagerSlick.init(INSTALL_OPTIONS)"
       }
     ]
   },

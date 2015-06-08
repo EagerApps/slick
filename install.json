@@ -14,10 +14,10 @@
         "src": "./slick/slick.js",
         "moduleType": "global",
         "depends": {
-          "github.com/jquery/jquery:jquery.js": "jquery"
+          "github.com/jquery/jquery:jquery.js": "jQuery"
         },
         "exports": [
-          "global:Slick"
+          "jQuery"
         ]
       },
       {
@@ -25,7 +25,7 @@
         "moduleType": "global",
         "src": "./install/helper.js",
         "depends": {
-          "./slick/slick.js": "Slick"
+          "./slick/slick.js": "jQuery"
         }
       },
       {

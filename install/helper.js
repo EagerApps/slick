@@ -29,7 +29,7 @@
       var settings = {};
       settings.autoplay = options.autoplay;
 
-      container.slick = new Slick(container, settings);
+      jQuery(container).slick(settings);
     }
   };
 

@@ -28,6 +28,8 @@
           "./slick/slick.js": "jQuery"
         }
       },
+    ],
+    "body": [
       {
         "type": "script",
         "contents": "EagerSlick.init(INSTALL_OPTIONS)"

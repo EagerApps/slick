@@ -14,7 +14,7 @@
         "src": "./slick/slick.js",
         "moduleType": "global",
         "depends": {
-          "github.com/jquery/jquery:jquery.js": "jQuery"
+          "github.com/jquery/jquery:jquery.js": "jquery"
         },
         "exports": [
           "global:Slick"
